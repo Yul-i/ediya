@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/* sprites & icon ====================================================== */
+.sp{background: url(../img/sprite-m.png) no-repeat; background-size: 250px;}
+.sp-blog{width: 28px; height: 28px; background-position: 0 0;}
+.sp-instagram{width: 28px; height: 28px; background-position: -50px 0;}
+.sp-facebook{width: 28px; height: 28px; background-position: -100px 0;}
+.sp-culture-icon1{width: 80px; height: 80px; background-position: 0 -50px;}
+.sp-culture-icon2{width: 80px; height: 80px; background-position: -100px -50px;}
+.sp-culture-icon3{width: 80px; height: 80px; background-position: 0 -150px;}
+
+/* header ================================================================== */
+body{
+    position: relative;
+    right: 0;
+    transition: right 0.5s;
+}
+body.open{
+    right: 300px;
+}
+
+header{
+   height: 90px;
+}
+header h1{
+   top:40px;
+}
+/* 메뉴버튼 */
+#btn-menu{
+   z-index: 50;
+   display: block;
+   position: absolute;
+   right:10px; 
+   top:46px;         
+}
+.open #btn-menu{
+    top: 13px;
+    color: #fff;
+
+}
+
+/* util, gnb, find-store, language-m */
+nav{
+   overflow-y: auto;
+   z-index: 50;
+   position: fixed;
+   right:-300px;
+   top:0;
+   width: 300px;
+   height: 100%;
+   background: #1d326c;
+   transition: right 0.5s;
+}
+.open nav{right:0;}
+
+/* nav가 열렸을 때 뒷배경 */
+header .container::after{
+   content: '';
+   position: fixed;
+   left:0;
+   top:0;
+   width: 100%;
+   height: 100%;
+   background: #000;
+   opacity: 0;
+   visibility: hidden;
+}
+.open header .container::after{
+   opacity: 0.7;
+   visibility: visible;
+}
+
+/* util(members/sns/language) */
+header nav .util{
+   overflow: hidden;
+   float: none;
+   margin-bottom: 10px;
+}
+header nav .util .members{
+   margin-left: 25px;
+}
+header nav .util .members li{
+   height: 36px;
+   line-height: 36px;
+}
+header nav .util .members li:first-child{
+   margin-left: 0;
+   padding-left: 0;
+}
+header nav .util .members .store{
+   display: none;
+}
+header nav .util .members li a{
+   color:#8399be;
+   font-size: 14px;
+}
+header nav .util .sns{
+   float: right;
+   margin: 4px 0 0 0;
+}
+header nav .util .language{
+   display: none;
+}
+
+/* gnb */
+header nav .gnb{
+   display: block;
+   height: auto;
+   transform:none;
+   border-top:1px solid #192d65;
+   border-bottom:1px solid #2e437c;
+}
+header nav .gnb>li{
+   float: none;
+   position: relative;
+}
+header nav .gnb>li>a{
+   height: 50px;
+   line-height: 50px;
+   margin:0;
+   padding: 0 25px;
+   box-sizing: border-box;
+   border-top:1px solid #2e437c;
+   border-bottom:1px solid #192d65;
+   color:#fff;
+}
+header nav .gnb>li>a>span::after{
+   display: none;
+}
+header nav .gnb>li>a i{
+   display: block;
+   position: absolute;
+   top:10px; 
+   right: 5px;
+}
+/* 빙그리 도는거 */
+/* header nav .gnb>li>a i{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    transition: transform 0.5s;
+}
+header nav .gnb>li.active>a i{
+    transform: rotate(180deg);
+} */
+
+/* 2depth - script로 드롭다운 처리 */
+
+header nav .gnb .sub{
+   display: none;
+   height: auto;
+   transition: none;
+}
+header nav .gnb:hover .sub{
+   height: auto;
+}
+header nav .gnb-bg{
+   display: none;
+}
+header nav .gnb .sub li a{
+   height: 50px;
+   line-height: 50px;
+   margin-left: 0;
+   padding-left: 25px;
+   border-top:1px solid #344a86;
+   border-bottom:1px solid #203570;
+   background: #2a4181;
+   color:#fff;
+   font-size: 14px;
+}
+header nav .gnb .sub li a:hover{
+   color:#fff;
+}
+header nav .find-store{
+    display: block;
+    height: auto;
+    background: #192d65;
+    line-height: 50px;
+    text-align: right;
+}
+header nav .find-store a{
+    color: #fff;
+}
+header nav .find-store a i{
+    margin: 0 5px;
+    font-size: 28px;
+    vertical-align: middle;
+}
+header nav .language-m{
+   display: block;
+   padding: 20px 0;
+   border-top:1px solid #344a86;
+}
+
+header nav .language-m ul{
+    overflow: hidden;
+}
+header nav .language-m ul li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    background: url(../img/util_line.gif) no-repeat right;
+}
+header nav .language-m ul li:last-child{
+    background: none;
+
+}
+header nav .language-m ul li a{
+    color: #8e99b6;
+}
+header nav .language-m ul li.on a{
+    color: #fff;
+}
+
+/* scroll 했을 때 규칙 */
+
+.scroll #btn-menu{
+    top: 13px
+};
+
+.scroll header .site{display: none;}
+.scroll header .util{
+    display: block;
+}
+.scroll header nav .gnb{
+    transform: none;
+}
+
+
+/* quick menu & quick event ==================================== */
+
+
+.quick-menu{
+   display: none;
+}
+.quick-event{
+   top: 120px;
+}
+.scroll .quick-event{
+    top: 90px;
+}
+
+/* section ======================================================== */
+
+section{
+   padding-top:90px;
+}
+
+/* main-notice */
+.main-notice .container{
+   margin-top: 40px; 
+}
+.main-notice .box{
+   float: none;
+   width: 100%; height: auto;
+   margin-right: 0;
+   padding: 40px;
+}
+.main-notice .store{
+   background-image: url(../img/main_store_bg.jpg);
+   background-size: initial;
+   background-color: #233e83;
+   background-position: right center;
+}
+.main-notice .box p span{
+   display: inline;
+}
+.main-notice .notice{
+   float: none;
+   width: 100%;
+   height: 376px;
+}
+.main-notice .notice .news{
+   padding: 40px;
+}
+.main-notice .notice .news .more{
+   right: 35px;
+   top: 47px;
+}
+
+
+/* main-sns */
+
+.main-sns h2{
+   padding-top: 58px;
+   font-size: 22px;
+}
+
+.main-sns ul{
+   margin-top: 50px;
+}
+.main-sns ul li{
+   width: 33.33%;
+}
+
+/* footer ==================================================== */
+
+footer{
+   margin-top: 50px;
+}
+
+.footer-ccm{
+   position: initial;
+   margin: 40px 0 24px;
+   width: 100%;
+   height: 100%;
+}
+.footer-ccm img{
+   margin: auto;
+   display: block;
+   position: initial;
+   bottom: none;
+}
+.footer-ccm img.footer-logo{
+   padding: 30px 0 13px;
+   left: none;
+   transform: none;
+}
+.footer-ccm>img.ccmimg{
+   right: none;

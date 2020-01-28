@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* quick menu & quick event ==================================== */
+.quick-event{
+    right: 20px;
+    bottom: 20px;
+    top: initial;
+    left: initial;
+}
+.scroll .quick-event{
+    top: initial;
+}
+
+/* section =================================================== */
+
+.main-beanist{
+    padding: 70px 0 200px;
+    background: url(../img/main_beanist_bg_m.gif) no-repeat bottom center #052e6b;
+ }
+ 
+ .main-beanist h2{
+    float: none;
+ }
+ .main-beanist .text-box{
+    float: none;
+    margin-left: 50px;
+ }
+ .main-beanist .text-box p{
+    line-height: 1.5em;
+ }
+ .main-beanist .text-box p span{
+    display: inline;
+ }
+
+ /* main-coffee */
+
+ .main-coffee{
+    height: 600px;
+    background: url(../img/main_coffee_bg_m.jpg) no-repeat center;
+    background-size: cover;
+ }
+
+ .main-coffee h2{
+    padding-top: 60px;
+    font-size: 32px;
+}
+
+.main-coffee h2 em{
+    display: block;
+}
+
+.main-coffee h2::after{
+    display: none;
+}
+
+
+.main-coffee p{
+    margin: 20px 0 45px;
+    font-size: 20px;
+}
+
+.main-coffee a{
+    border-color: #233e83;
+    background: #233e83;
+    color: white;
+}
+
+
+/* main-culture */
+
+
+.main_culture{
+    height: 600px;
+}
+.main_culture h2{
+    padding-top: 60px;
+    font-size: 32px;
+}
+.main_culture h2 em{
+    display: block;   
+}
+.main-culture p{
+    margin: 20px 0 45px;
+    font-size: 20px;
+}
+.main-coffee p::after{
+    display: none;
+}
+.main-culture .culture-icon ul li a{
+    font-size: 14px;
+}
+.main-culture .culture-icon ul li a span{
+    display: block;
+}
+
+/* main-coffee-lab */
+.main-coffee-lab h2{
+    padding-top: 60px;
+    font-size: 32px;
+}
+.main-coffee-lab h2 em{
+    display: block;
+}
+
+.main-coffee-lab p{
+    margin: 20px 0 45px;
+    font-size: 20px;
+}
+
+.main-coffee-lab p:after{
+    display: none;
+}
+
+.main-coffee-lab .lab-box .lab-menu{
+    width: 70%;
+}
+.main-coffee-lab .lab-box .lab-barista{
+    width: 70%;
+    margin-top: -80px;
+}
+
+.main-coffee-lab .lab-box span{
+    bottom: 40px;
+}
+
+/* main-notice */
+
+
+/* main-sns */
+
+.main-sns h2{
+    padding-top: 38px;
+    font-size: 22px;
+ }
+ 
+ .main-sns ul{
+    margin-top: 30px;
+ }
+ .main-sns ul li{
+    width: 50%;
+    padding: 0 4px 4px;
+ }
+ 
+ 
+ /* footer */
+ 
+ 
+ footer{
+    margin-top: 50px;
+ }
+ 
+ .footer-ccm{
+    position: initial;
+    margin: 40px 0 24px;
+    width: 100%;
+    height: 100%;
+ }
+ .footer-ccm img{
+    margin: auto;
+    display: block;
+    position: initial;
+    bottom: none;
+ }
+ .footer-ccm img.footer-logo{
+    padding: 30px 0 13px;
+    left: none;
+    transform: none;
+ }
+ .footer-ccm>img.ccmimg{
+    right: none;
+ }

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EDIYA COFFEE</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width:1100px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:767px)">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/ediya.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="#"><img src="img/top_logo.gif" alt="EDIYA COFFEE"></a></h1>
+            <ul class="site">
+                <li class="on"><a href="#">브랜드 사이트</a></li>
+                <li><a href="#">기업 사이트</a></li>
+            </ul>
+            <!-- 모바일용 메뉴버튼 -->
+            <button id="btn-menu">
+                <i class="material-icons">menu</i>
+            </button>
+            <nav>
+                <div class="util">
+                    <ul class="members">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li class="store"><a href="#">매장찾기</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li><a href="#" target="_blank" class="sp sp-blog"><span class="blind">블로그</span></a></li>
+                        <li><a href="#" target="_blank" class="sp sp-instagram"><span class="blind">인스타그램</span></a></li>
+                        <li><a href="#" target="_blank" class="sp sp-facebook"><span class="blind">페이스북</span></a></li>
+                    </ul>
+                    <div class="language">
+                        <a href="#">Korean</a>
+                        <ul>
+                            <li><a href="#">Korean</a></li>
+                            <li><a href="index-en.html">English</a></li>
+                            <li><a href="#">Chinese</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#"><span>메뉴</span><i class="material-icons">keyboard_arrow_down</i></a>
+                        <ul class="sub">
+                            <li><a href="#">음료</a></li>
+                            <li><a href="#">베이커리</a></li>
+                            <li><a href="#">MD</a></li>
+                            <li><a href="#">비니스트</a></li>
+                            <li><a href="#">원두</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span>이디야멤버스</span><i class="material-icons">keyboard_arrow_down</i></a>
+                        <ul class="sub">
+                            <li><a href="#">멤버스 소개</a></li>
+                            <li><a href="#">2019 리워드</a></li>
+                            <li><a href="#">이디야카드</a></li>
+                            <li><a href="#">선물하기</a></li>
+                            <li><a href="#">이디야오더</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span>이디야커피랩</span><i class="material-icons">keyboard_arrow_down</i></a>
+                        <ul class="sub">
+                            <li><a href="#">이디야커피랩</a></li>
+                            <li><a href="#">이디야커피랩 메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span>이디야컬쳐랩</span><i class="material-icons">keyboard_arrow_down</i></a>
+                        <ul class="sub">
+                            <li><a href="#">컬쳐페스타</a></li>
+                            <li><a href="#">프로그램 및 시설 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span>공지사항</span><i class="material-icons">keyboard_arrow_down</i></a>
+                        <ul class="sub">
+                            <li><a href="#">이디야 소식</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 2depth 메뉴가 펼쳐질 때 뒤에 깔릴 예정 -->
+                <div class="gnb-bg"></div>
+                <!-- 모바일용 추가 - 매장찾기/언어선택 -->
+                <div class="find-store">
+                    <a href="#">매장 찾기<i class="material-icons">room</i></a>
+                </div>
+                <div class="language-m">
+                    <ul>
+                        <li class="on"><a href="#">Korean</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <aside class="quick-menu">
+        <ul>
+            <li><a href="#" class="sp sp-quick-menu1"><span class="blind">기업사이트 바로 가기</span></a></li>
+            <li><a href="#" class="sp sp-quick-menu2"><span class="blind">EDIYA 창업안내</span></a></li>
+            <li><a href="#" class="sp sp-quick-menu3"><span class="blind">CULTURELAB 시설대관</span></a></li>
+            <li><a href="#" class="sp sp-quick-menu4"><span class="blind">2019리워드 바로가기</span></a></li>
+        </ul>
+    </aside>
+    <aside class="quick-event">
+        <button class="material-icons">close</button>
+        <a href="#">
+            <img src="img/main_event.png" alt="우리동네 매장을 자랑해주세요. 이디야커피가 푸짐한 선물을 드립니다.">
+        </a>
+    </aside>
+    <section>
+        <article class="main-slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                        <img src="img/slide1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                        <img src="img/slide2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                        <img src="img/slide3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <button id="play-state" class="fas fa-pause"></button>
+            </div>
+        </article>
+
+        <article class="main-beanist">
+            <div class="container">
+                <h2>
+                    <img src="img/beanist.gif" alt="beanist">
+                    <span>YOUR COFFEE FLAVOR</span>
+                </h2>
+                <div class="text-box">
+                    <p>
+                        <span>엄선된 원두에서 추출한 최상의 맛과 향을</span>
+                        '언제 어디서나' 간편하게 즐기다.
+                    </p>
+                    <a href="#">제품 자세히보기<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+            </div>
+        </article>
+
+        <article class="main-coffee">
+            <h2>ALWAYS BESIDE YOU, <em>EDIYA COFFEE</em></h2>
+            <p>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</p>
+            <a href="#">메뉴보기</a>
+        </article>
+
+        <article class="main-culture">
+            <h2>EDIYA <em>CULTURE LAB</em></h2>
+            <p>커피를 더 특별하게 만드는 문화가 시작되는 공간</p>
+            <div class="culture-icon row">
+                <ul>
+                    <li class="fadeInUp">
+                        <a href="#">
+                            <i class="sp sp-culture-icon1"></i>
+                            <span>이디야</span> 뮤직 페스타
+                        </a>
+                    </li>
+                    <li class="fadeInUp">
+                        <a href="#">
+                            <i class="sp sp-culture-icon2"></i>
+                            <span>컬처랩</span> 시설대관
+                        </a>
+                    </li>
+                    <li class="fadeInUp">
+                        <a href="#">
+                            <i class="sp sp-culture-icon3"></i>
+                            <span>이디야</span> 컬처랩
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </article>
+        <article class="main-coffee-lab container">
+            <h2>EDIYA <em>COFFEE LAB</em></h2>
+            <p>최고의 커피를 향한 끊임없는 노력, 이디야커피연구소</p>
+            <div class="lab-box">
+                <div class="lab-menu fadeInUp">
+                    <a href="#">
+                        <img src="img/lab_menu_bg.jpg" alt="">
+                        <span>LAB MENU</span>
+                    </a>
+                </div>
+                <div class="lab-barista fadeInUp">
+                    <a href="#">
+                        <img src="img/lab_barista_bg.jpg" alt="">
+                        <span>LAB BARISTA</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+        <article class="main-notice">
+            <div class="container">
+                <div class="box franchise">
+                    <a href="#">
+                        <h2>가맹점 개설 안내</h2>
+                        <p>성공 창업을 위한 선택</p>
+                    </a>
+                </div>
+                <div class="box store">
+                    <h2>매장찾기</h2>
+                    <p><span>가까운 이디야 매장을</span> 확인해보세요.</p>
+                    <form action="#">
+                        <input type="text" title="매장검색" placeholder="FIND A STORE">
+                        <button class="material-icons">search</button>
+                    </form>
+                </div>
+                <div class="notice">
+                    <div class="news">
+                        <h2>이디야 소식</h2>
+                        <ul>
+                            <li>
+                                <a href="#">이디야멤버스 서비스 일시중단 안내</a>
+                                <span>2019.11.11</span>
+                            </li>
+                            <li>
+                                <a href="#">이디야멤버스 이용약관 변경예정 안내</a>
+                                <span>2019.08.01</span>
+                            </li>
+                            <li>
+                                <a href="#">이디야멤버스 프리쿠폰 바코드 변경 안내</a>
+                                <span>2019.05.31</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="more">more <i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <div class="brochure">
+                        <a href="#">
+                            <span>브로슈어 다운받기</span>
+                            <i class="material-icons">arrow_right_alt</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="main-sns container">
+            <h2>EDIYA COFFEE SNS</h2>
+            <p>Coffee moment with EDIYA</p>
+            <ul>
+                <li><a href="#"><img src="http://picsum.photos/id/101/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/102/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/103/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/104/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/115/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/106/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/107/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/108/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/109/320/320" alt=""></a></li>
+                <li><a href="#"><img src="http://picsum.photos/id/111/320/320" alt=""></a></li>
+            </ul>
+        </article>
+
+        <footer>
+                <div class="container">
+                   <ul>
+                      <li class="active"><a href="#">개인정보처리방침</a></li>
+                      <li><a href="#">멤버스 이용약관</a></li>
+                      <li><a href="#">가맹 안내</a></li>
+                      <li><a href="#">대량쿠폰구매</a></li>
+                      <li><a href="#">채용안내</a></li>
+                      <li><a href="#">고객의 소리</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                      <li><a href="#">점주의 방</a></li>
+                   </ul>
+                   <div class="footer-ccm">
+                      <img class="ccmimg" src="img/footer_ccm.png" alt="국내 커피업체 최초 소비자중심경영 인증">
+                      <img class="footer-logo" src="img/bottom_logo.gif" alt="EDIYA COFFEE">
+                   </div>
+                   <div class="footer-info">
+                      <p class="ediya-info">
+                         <span>서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구 논현동 221-17)</span>
+                         <span>TEL : 02-543-6467</span>
+                         <span> FAX : 02-543-7191</span>
+                         <span>사업자등록번호 : 107-86-16302</span>
+                         <span>통신판매업 신고 : 강남 제 002519호</span>
+                         <span> 대표이사 : 문창기</span>
+                      </p>
+                      <p class="copy">ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..</p>
+                   </div>
+                </div>
+             </footer>
+    </section>
+</body>
+</html>
